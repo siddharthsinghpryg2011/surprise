@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple laptop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <iframe id="macSimulator" src="https://www.macos-web.app/" frameborder="0"></iframe>
+
+            <div class="mac-desktop-icons" id="desktopIcons">
+                <div class="app-icon" data-url="https://www.youtube.com/embed/" data-name="YouTube" data-type="iframe">
+                    <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                    <span>YouTube</span>
+                </div>
+                <div class="app-icon" data-url="https://web.whatsapp.com/" data-name="WhatsApp" data-type="iframe">
+                    <i class="fa-brands fa-whatsapp" style="color: #25d366;"></i>
+                    <span>WhatsApp</span>
+                </div>
+                <div class="app-icon" data-url="https://www.instagram.com/" data-name="Instagram" data-type="iframe">
+                    <i class="fa-brands fa-instagram" style="color: #e1306c;"></i>
+                    <span>Instagram</span>
+                </div>
+                <div class="app-icon" data-url="https://www.google.com/search?igu=1" data-name="Gemini" data-type="iframe">
+                    <i class="fa-solid fa-wand-magic-sparkles" style="color: #4285f4;"></i>
+                    <span>Gemini</span>
+                </div>
+                <div class="app-icon" data-url="birthday-card-qr.png.gif" data-name="QR Scanner" data-type="image">
+                    <i class="fa-solid fa-qrcode" style="color: #ffffff; background: #333 !important; border-radius: 6px; padding: 2px;"></i>
+                    <span>QR Code</span>
+                </div>
+            </div>
+
+            <div class="mac-window" id="macWindow">
+                <div class="win-header">
+                    <div class="win-buttons">
+                        <span class="win-btn close" id="winClose"></span>
+                        <span class="win-btn minimize"></span>
+                        <span class="win-btn maximize"></span>
+                    </div>
+                    <div class="win-title" id="winTitle">App Tab</div>
+                </div>
+                <div class="win-body">
+                    <iframe id="appFrame" src="" frameborder="0"></iframe>
+                    <img id="appImage" src="bcd.gif" alt="QR Content" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
